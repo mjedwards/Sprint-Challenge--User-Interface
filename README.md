@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+    Semantic HTML a way of giving meaning to your markup. By specifiying each section and element of a page you are giving clear defined purpose to your code. An example woud be when creating a navigation bar at the top of a page instead of using division tags and giving them unique class names, I could use the tags of header and nested inside I could place the tags of nav. This clearly shows that the content inside the header and nav represent the navigation menu at the top of the page. This allows for a universal understanding of the code.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+    Inline displays in a row. Block elements display in a column. Block elements tend to have their own line to display on, while inline shares a line.
 
 3. What are the 4 areas of the box model?
 
+    Content
+    Padding
+    Margin
+    Border
+
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+    cross-axis
+
 5. Explain why git is valuable to a team of developers.
+
+    It allows for a team to work on changes to a project, without changing the project. Through the use of branching, forking, and cloning, a team of developers can individually work on parts of a project and share any changes without changing the actual project itself. It allows for version control.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
