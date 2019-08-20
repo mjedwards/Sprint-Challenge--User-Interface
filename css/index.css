@@ -66,11 +66,34 @@ p {
     line-height: 1.4;
 }
 
+/* header styling */
+section header {
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+    align-items: flex-end;
+}
+
+section header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section header nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0px 45px;
+}
+/* end of header styling */
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
+/* main content styling */
+
+/* top  */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -79,15 +102,34 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.about-page .about-page-top-content {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    animation: fade-in 5s linear;
+}
+
+.about-page .about-page-top-content p {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.top-content img {
+    margin-bottom: 50px;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    animation: fade-in 5s linear;
 }
+/* ----------- */
 
+/* middle  */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    animation: fade-in 5s linear;
 }
 
 .middle-content h2 {
@@ -112,10 +154,54 @@ p {
     justify-content: center;
 }
 
+
+.about-page-middle-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    animation: fade-in 5s linear;
+}
+
+.about-page-middle-content div {
+    width: 47%;
+    margin: 10px 0px;
+    border-bottom: 1px dashed black;
+}
+
+.about-page-middle-content div p {
+    margin: 15px 0px;
+}
+
+.about-page-middle-content div button {
+    border-radius: 6px;
+    width: 30%;
+    height: 30px;
+    border: 2px solid black;
+    margin: 15px 0px;
+    font-size: 1em;
+}
+
+
+/* boxes styling */
+.middle-content .boxes .box-1 {background: teal;}
+.middle-content .boxes .box-2 {background: gold;}
+.middle-content .boxes .box-3 {background: cadetblue;}
+.middle-content .boxes .box-4 {background: coral;}
+.middle-content .boxes .box-5 {background: crimson;}
+.middle-content .boxes .box-6 {background: forestgreen;}
+.middle-content .boxes .box-7 {background: darkorchid;}
+.middle-content .boxes .box-8 {background: hotpink;}
+.middle-content .boxes .box-9 {background: indigo;}
+.middle-content .boxes .box-10 {background: dodgerblue;}
+/* --------- */
+/* -------------- */
+/* bottom  */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    animation: fade-in 5s linear;
 }
 
 .bottom-content .text-container {
@@ -125,6 +211,50 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+.about-page-bottom-content {
+    animation: fade-in 5s linear;
+}
+.about-page-bottom-content p {
+    margin: 40px 10px;
+}
+/* ---------- */
+/* end of main content styling */
+
+/* contact page */
+section.contact-form {
+	display: flex;
+    flex-direction: column;
+	height: 100vh;
+	width: 100%;
+    margin-top: 100px;
+}
+
+section.contact-form form {
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+section.contact-form div {
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+textarea {
+	height: 150px;
+}
+
+section.contact-form button {
+	width: 25%;
+    margin: 25px auto;
+}
+/* end of contact page  */
+/* footer styling */
 
 footer {
     width: 100%;
@@ -144,3 +274,20 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* end of footer styling */
+
+/* site link hovers */
+section header nav a:hover {
+    filter: invert(50%);
+}
+
+footer nav a:hover {
+    filter: invert(50%);
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* ----------- */
